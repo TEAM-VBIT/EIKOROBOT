@@ -203,7 +203,7 @@ def only_premium(func):
             uid=u.id
             if uid in protected_ids:return await func(client,*args,**kwargs)
             if uid not in _premium_set:
-                try:await m.reply_text("⚠️ This command only works for 'AloneX Premium' users!")
+                try:await m.reply_text("⚠️ This command only works for 'Vampire Premium' users!")
                 except:pass
                 return
             return await func(client,*args,**kwargs)
