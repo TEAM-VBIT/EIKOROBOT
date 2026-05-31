@@ -191,7 +191,7 @@ async def root_route_handler(request):
         </div>
 
         <footer>
-            <p>Made with ❤️ by <a href="https://t.me/DEPSTEY" target="_blank">@Sahil</a></p>
+            <p>Made with ❤️ by <a href="https://t.me/DEPSTEY" target="_blank">@lVAMPIRE_KINGl</a></p>
         </footer>
     </div>
 </body>
