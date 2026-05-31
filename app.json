@@ -1,89 +1,50 @@
 {
-    "name": "˹𝞚𝙡𝞸𝞰𝞮 ✗ 𝙈𝙪𝙨𝙞𝙘 ♪˼",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://litter.catbox.moe/xroqew.jpg",
-    "keywords": [
-        "python3",
-        "telegram",
-        "bot",
-        "music-bot"
-    ],
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "Get this value from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Get this value from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "BOT_TOKEN": {
-            "description": "A Bot's token from Botfather",
-            "value": "",
-            "required": true
-        },
-        "MONGO_URL": {
-            "description": "Get a mongodb url from https://cloud.mongodb.com.",
-            "value": "",
-            "required": true
-        },
-        "LOGGER_ID": {
-            "description": "Your log group ID, add your bot there and promote as an admin.",
-            "value": "",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "The user id of user whom you would like to add as OWNER.",
-            "value": "",
-            "required": true
-        },
-        "SESSION": {
-            "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
-            "value": "",
-            "required": true
-        },
-        "SESSION2": {
-            "description": "Assistant Session 2 (Optional).",
-            "value": "",
-            "required": false
-        },
-        "SESSION3": {
-            "description": "Assistant Session 3 (Optional).",
-            "value": "",
-            "required": false
-        },
-        "AUTO_LEAVE": {
-            "description": "Auto leave chat after some time (Optional).",
-            "value": "False",
-            "required": false
-        },
-        "AUTO_END": {
-            "description": "Auto end stream if no one is in VC (Optional).",
-            "value": "False",
-            "required": false
-        },
-        "VIDEO_PLAY": {
-            "description": "Enable video playback (Optional).",
-            "value": "True",
-            "required": false
-        },
-        "DURATION_LIMIT": {
-            "description": "Maximum duration allowed for a track in minutes (Optional).",
-            "value": "60",
-            "required": false
-        },
-        "SUPPORT_CHANNEL": {
-            "description": "Your support channel link (Optional).",
-            "value": "https://t.me/VAMPIREUPDATES",
-            "required": false
-        },
-        "SUPPORT_CHAT": {
-            "description": "Your support group link (Optional).",
-            "value": "https://t.me/VAMPIREUPDATES",
-            "required": false
-        }
+  "name": "EIKOROBOT",
+  "description": "Telegram Management Bot",
+  "repository": "https://github.com/TEAM-VBIT/EIKOROBOT",
+  "keywords": ["telegram", "management", "pyrogram"],
+  "env": {
+    "TOKEN": {
+      "description": "Bot Token from BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API HASH",
+      "required": true
+    },
+    "DB_URL": {
+      "description": "MongoDB URL",
+      "required": true
+    },
+    "ALONE_OWNER_ID": {
+      "description": "Owner Telegram ID",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner Telegram ID",
+      "required": true
+    },
+    "LOG_GROUP_ID": {
+      "description": "Log Group ID",
+      "required": false
+    },
+    "USER_STRING": {
+      "description": "Pyrogram Session String",
+      "required": false
     }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
